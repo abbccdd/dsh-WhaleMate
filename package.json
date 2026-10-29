@@ -32,7 +32,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "node --test tests/api.test.mjs tests/store.test.mjs tests/tool.test.mjs tests/cli.test.mjs tests/privacy.test.mjs tests/profile.test.mjs tests/learning.test.mjs tests/cross-platform.test.mjs tests/documents.test.mjs tests/interests.test.mjs tests/qq-owner.test.mjs tests/recommendations.test.mjs tests/shared-video-diary.test.mjs tests/whale-video.test.mjs tests/proactive.test.mjs tests/semantic-memory.test.mjs tests/whale-interest.test.mjs tests/privacy-review.test.mjs tests/maintenance.test.mjs tests/external-content.test.mjs tests/auto-memory.test.mjs tests/storage-stats.test.mjs tests/whale-round-observer.test.mjs"
+    "test": "node --test tests/api.test.mjs tests/store.test.mjs tests/tool.test.mjs tests/cli.test.mjs tests/privacy.test.mjs tests/profile.test.mjs tests/learning.test.mjs tests/cross-platform.test.mjs tests/documents.test.mjs tests/interests.test.mjs tests/qq-owner.test.mjs tests/recommendations.test.mjs tests/shared-video-diary.test.mjs tests/whale-video.test.mjs tests/proactive.test.mjs tests/semantic-memory.test.mjs tests/whale-interest.test.mjs tests/privacy-review.test.mjs tests/maintenance.test.mjs tests/external-content.test.mjs tests/auto-memory.test.mjs tests/storage-stats.test.mjs tests/whale-round-observer.test.mjs tests/install-companions.test.mjs"
   },
   "dsh": {
     "bundle": {
