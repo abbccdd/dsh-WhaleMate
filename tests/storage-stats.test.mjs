@@ -12,7 +12,7 @@ test('只统计字节和文件数，超出阈值告警，不读取或修改会�
   const history=path.join(dshHome,'sessions','one','session.v4.jsonl.zstd')
   fs.writeFileSync(history,'fake-compressed-history')
   fs.writeFileSync(path.join(dshHome,'pond','pond.json'),'{}')
-  const stats=storageStats({home,dshHome,threshold:3})
+  const stats=storageStats({home,dshHome,pondHome:path.join(dshHome,'pond'),threshold:3})
   assert.equal(stats.sessions.files,1);assert.equal(stats.sessions.bytes,23);assert.equal(stats.sessionsAboveThreshold,true)
   assert.equal(stats.pond.bytes,2);assert.equal(stats.reports.files,0)
   assert.equal(fs.readFileSync(history,'utf8'),'fake-compressed-history')
