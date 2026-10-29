@@ -1,0 +1,47 @@
+{
+  "name": "dsh-pond",
+  "version": "0.6.0",
+  "description": "鲸伴 WhaleMate：跨应用陪伴、记忆和视频分享的 DSH 插件。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "shared-memory",
+    "local-first",
+    "privacy",
+    "wechat",
+    "qq",
+    "bilibili"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./store": "./lib/store.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "vendor/tencent-dsh-qqbot-owner",
+    "vendor/dsh-bili-whale",
+    "third-party-licenses",
+    "THIRD_PARTY_NOTICES.md",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/api.test.mjs tests/store.test.mjs tests/tool.test.mjs tests/cli.test.mjs tests/privacy.test.mjs tests/profile.test.mjs tests/learning.test.mjs tests/cross-platform.test.mjs tests/documents.test.mjs tests/interests.test.mjs tests/qq-owner.test.mjs tests/recommendations.test.mjs tests/shared-video-diary.test.mjs tests/whale-video.test.mjs tests/proactive.test.mjs tests/semantic-memory.test.mjs tests/whale-interest.test.mjs tests/privacy-review.test.mjs tests/maintenance.test.mjs tests/external-content.test.mjs tests/auto-memory.test.mjs tests/storage-stats.test.mjs tests/whale-round-observer.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

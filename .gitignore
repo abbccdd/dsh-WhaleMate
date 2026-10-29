@@ -1,0 +1,17 @@
+node_modules/
+待删除文件/
+实验结果/
+security-audit/
+*.log
+*.tmp
+*.tgz
+*.zstd
+*.db
+*.sqlite*
+.env
+.env.*
+pond.json
+qq-owner.json
+qq-pairing-code.txt
+credentials.json
+secrets.json

@@ -1,0 +1,45 @@
+dsh-memory — NOTICE
+===================
+
+This project is an independent reimplementation for deepseek-harness. It is
+inspired by, and several files are ported or derived from, the open-source
+project magic-context:
+
+  https://github.com/cortexkit/magic-context
+
+Copyright (c) 2025 ualtinok. Licensed under the MIT License.
+
+Ported / derived files (per the attribution comments in the sources):
+
+  - lib/redaction.js  — port of shared/redaction.ts (hasShareabilitySensitiveText)
+  - lib/cron.js       — port of dreamer/cron.ts (5-field cron evaluator)
+  - lib/decay.js      — decay-curve rendering (trimmed)
+  - lib/dreamer.js    — port of task-scheduler.ts (subset)
+  - lib/budgets.js    — derive-budgets (trimmed)
+
+Other modules are modeled on magic-context's design. This project is NOT
+affiliated with cortexkit or with DeepSeek.
+
+Upstream MIT License text (magic-context):
+
+  MIT License
+
+  Copyright (c) 2025 ualtinok
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
